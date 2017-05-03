@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+LinearLayout = permite ubicar los componentes uno al costado del otro o uno debajo del otro
+FrameLayout = permite ubicar los componente según las gravedades que se le indique
+RelativeLayout = permite ubicar los componentes según lo que necesitemos, pero tenemos que
+considerar que puede que se distorcione en ciertos celulares porque tiene margenes en duro
+ConstraintLayout = permite ubicar los componetes en donde necesitemos, pero se debe de asociar
+a 4 puntos (arriba, abajo, derecha y izquierda)
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jcodee.mod1class1.HomeActivity">
+    <!--
+    match_parent = que ocupa todo el ancho o todo el alto de la pantalla
+    wrap_content = que ocupa todo el ancho o todo el alto del componente
+    el weight funciona siempre y cuando la orientación que se le asigne vaya de la mano
+    con la posición que se quiere adaptar, por ejemplo:
+    -Si la posición es horizontal, el weight va a aplicar en el width
+    -Si la posición es vertical, el weight va a aplicar en el height
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/valor_vacio"
+        android:layout_margin="@dimen/espacio"
+        android:layout_weight="@integer/mitad"
+        android:background="@color/color1"
+        android:orientation="vertical">
+        <!-- Formato al código -> Cmd + Alt + L -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/valor_vacio"
+            android:layout_margin="@dimen/espacio"
+            android:layout_weight="@integer/mitad"
+            android:background="@color/color3">
+
+            <EditText
+                android:id="@+id/etTextoUno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="@string/texto_uno" />
+            <!-- hint = texto como marca de agua o placeholder en web -->
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/valor_vacio"
+            android:layout_margin="@dimen/espacio"
+            android:layout_weight="@integer/mitad"
+            android:background="@color/color4">
+
+            <EditText
+                android:id="@+id/etTextoDos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="@string/texto_dos" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/valor_vacio"
+        android:layout_margin="@dimen/espacio"
+        android:layout_weight="@integer/mitad"
+        android:background="@color/color2"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="@dimen/valor_vacio"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/espacio"
+            android:layout_weight="@integer/mitad"
+            android:background="@color/color5">
+
+            <Button
+                android:id="@+id/btnProcesar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/procesar" />
+            <!--
+             layout_gravity = afecta a todo el componente
+             gravity = afecta al contenido del componente
+             -->
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="@dimen/valor_vacio"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/espacio"
+            android:layout_weight="@integer/mitad"
+            android:background="@color/color6">
+
+            <TextView
+                android:id="@+id/tvTexto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="18sp" />
+            <!-- android:textStyle="bold" -->
+            <!-- sp = size per pixel -->
+
+            <Button
+                android:id="@+id/btnSiguiente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:text="@string/siguiente" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Mod1Class1</string>
+    <string name="texto_uno">Texto 1</string>
+    <string name="texto_dos">Texto Dos</string>
+    <string name="procesar">Procesar</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="texto">Texto</string>
+    <string name="atras">Atrás</string>
+</resources>

@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        //applicationId es igual al package name
+        applicationId "com.jcodee.mod1class1"
+        //minSdkVersion es la versión minima de android que va a soportar
+        minSdkVersion 19
+        //maxSdkVersion es la versión máxima de andorid que va a soportar
+        maxSdkVersion 25
+        //targetSdkVersion es la versión de la cual se va a tomar las caracteristicas
+        targetSdkVersion 19
+        //versionCode la versión del código en desarrollo o de subida en la Play Store
+        versionCode 1
+        //versionName la versión que le brindamos al usuario final
+        versionName "1.0"
+        //Las pruebas unitarias
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        //Exportar el apk
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+}
