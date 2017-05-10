@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="periodicos">
+        <item>El Comercio</item>
+        <item>Trome</item>
+        <item>Chino</item>
+    </string-array>
+</resources>
