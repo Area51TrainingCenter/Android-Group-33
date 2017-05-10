@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Mod1Class4</string>
+    <string name="aprobado">Aprobado</string>
+    <string name="titulo">Titulo</string>
+    <string name="rechazado">Rechazado</string>
+    <string name="registro">Registro</string>
+    <string name="ver_todo">Ver Todo</string>
+</resources>
