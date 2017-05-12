@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Mod1Class6</string>
+    <string name="titulo">Titulo</string>
+    <string name="descripcion">Descripción</string>
+    <string name="registrar">Registrar</string>
+    <string name="galeria">Galería</string>
+</resources>
