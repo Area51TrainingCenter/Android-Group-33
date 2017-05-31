@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Mod2Class1_1</string>
+    <string name="titulo">Titulo</string>
+    <string name="descripcion">Descripción</string>
+    <string name="listado">Listado</string>
+    <string name="guardar">Guardar</string>
+</resources>
