@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Mod2Class03</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="guardar">Guardar</string>
+    <string name="listar">Listar</string>
+</resources>
