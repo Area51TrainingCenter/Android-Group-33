@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Mod3Class5</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="stop">Stop</string>
+    <string name="musica1">Música 1</string>
+    <string name="musica2">Música 2</string>
+    <string name="musica3">Música 3</string>
+</resources>
